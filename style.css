@@ -29,6 +29,24 @@
     justify-content: end;
 }
 
+/* without query default topnav */
+
+.text_box{
+    display: grid;
+    place-items: center;
+}
+#navtop-link{
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+}
+
+#navtop-link:hover{
+    text-decoration: underline;
+}
+
+/* media query topnav */
+
 @media screen and (max-width:768px) {
     .icons-right{
         justify-content: center!important;
@@ -73,7 +91,10 @@
 }
 
 
-
+/* navbar from bootstrap */
+#mynavli li a:hover{
+  color:#55B1F3;
+}
 
 
 
@@ -109,6 +130,14 @@
 .footer1-lists{
     list-style-type: none;
 }
+
+.footer1-lists li:hover,
+.footer2 .footer2-text a:hover,
+.footer2 .footer2-text span a:hover{
+    color: white;
+    cursor: pointer;
+}
+
 
 .footer2 .footer2-text a,
 .footer2 .footer2-text span a{
